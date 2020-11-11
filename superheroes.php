@@ -65,8 +65,28 @@ $superheroes = [
 
 ?>
 
+<?php
+function search($superheroes, $search)
+{
+    foreach($superheroes as $key => $superhero )
+    {
+        if ($superhero[$name] == $search | $superhero[$alias] == $search )
+            return $
+    }
+}
+
+?>
+
 <ul>
 <?php foreach ($superheroes as $superhero): ?>
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
 </ul>
+
+<?php
+if( isset($_POST['ajax']) && isset($_POST['name']) ){
+ echo $_POST['name'];
+ exit;
+}
+?>
+

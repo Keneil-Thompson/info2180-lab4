@@ -8,8 +8,14 @@
 </head>
 <body>
     <h1>Avengers Character Search</h1>
+    <p>Search by Full Name or Alias</p>
     <p id='resText'></p>
     <script src="app.js"></script>
-    <button onclick="getText()"">Search</button>
+    <form class="sHero" method="post" action="superheroes.php">
+        <input type="text" name="search" id="search" placeholder="eg. Captain America or Steve Rogers">
+        <button onclick="getText()" type="submit"><i class="hSearch"></i>Search</button>
+    </form>
+    <div class=result></div>
+
 </body>   
 </html>    
